@@ -1,36 +1,44 @@
 import React from "react";
 import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
-// import "./footer.css";
-import "../index.css"
 
-const Contact = () => {
+const FooterPage = () => {
   return (
-    <MDBFooter color="blue" className="font-small pt-2 mt-2">
-      <MDBContainer fluid className="text-center">
+    <MDBFooter color="blue" className="font-small pt-4 mt-4">
+      <MDBContainer fluid className="text-center text-md-left">
         <MDBRow>
-          <MDBCol md="4">
-            <h5 className="title">Contact</h5>
+          <MDBCol md="6">
+            <h5 className="title">Footer Content</h5>
             <p>
-              Denis Matijevic
-              <br />
-              801-809-9105
-              <br />
-              denisone90@gmail.com
-              <br />
-              <a href="https://github.com/denismatijevic" target="_blank">
-              github.com/denismatijevic
-              </a>
+              Here you can use rows and columns here to organize your footer
+              content.
             </p>
+          </MDBCol>
+          <MDBCol md="6">
+            <h5 className="title">Links</h5>
+            <ul>
+              <li className="list-unstyled">
+                <a href="#!">Link 1</a>
+              </li>
+              <li className="list-unstyled">
+                <a href="#!">Link 2</a>
+              </li>
+              <li className="list-unstyled">
+                <a href="#!">Link 3</a>
+              </li>
+              <li className="list-unstyled">
+                <a href="#!">Link 4</a>
+              </li>
+            </ul>
           </MDBCol>
         </MDBRow>
       </MDBContainer>
-      <div className="footer-copyright text-center py-1">
+      <div className="footer-copyright text-center py-3">
         <MDBContainer fluid>
-          &copy; {new Date().getFullYear()} Copyright: <a href="https://www.linkedin.com/in/denis-matijevic-213463161/" target="_blank"> Denis Matijevic </a>
+          &copy; {new Date().getFullYear()} Copyright: <a href="https://www.mdbootstrap.com"> MDBootstrap.com </a>
         </MDBContainer>
       </div>
     </MDBFooter>
   );
 }
 
-export default Contact;
+export default FooterPage;
