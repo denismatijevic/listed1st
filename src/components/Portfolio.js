@@ -5,7 +5,7 @@ const Portfolio = () => {
   return (
     <section className="text-center my-5">
       <h2 className="h1-responsive font-weight-bold my-5">
-        Our best projects
+        Our Portfolio
       </h2>
       <p className="grey-text w-responsive mx-auto mb-5">
         Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -27,7 +27,7 @@ const Portfolio = () => {
             </a>
           </MDBView>
           <MDBCardBody className="pb-0">
-            <h4 className="font-weight-bold my-3">Title of the news</h4>
+            <h4 className="font-weight-bold my-3">Summerlin Labs</h4>
             <p className="grey-text">
               Temporibus autem quibusdam et aut officiis debitis aut rerum
               necessitatibus saepe eveniet ut et voluptates repudiandae.
@@ -49,7 +49,7 @@ const Portfolio = () => {
             </a>
           </MDBView>
           <MDBCardBody className="pb-0">
-            <h4 className="font-weight-bold my-3">Title of the news</h4>
+            <h4 className="font-weight-bold my-3">Our Head Engineer</h4>
             <p className="grey-text">
               Temporibus autem quibusdam et aut officiis debitis aut rerum
               necessitatibus saepe eveniet ut et voluptates repudiandae.
@@ -71,7 +71,7 @@ const Portfolio = () => {
             </a>
           </MDBView>
           <MDBCardBody className="pb-0">
-            <h4 className="font-weight-bold my-3">Title of the news</h4>
+            <h4 className="font-weight-bold my-3">How To Fight Bigfoot</h4>
             <p className="grey-text">
               Temporibus autem quibusdam et aut officiis debitis aut rerum
               necessitatibus saepe eveniet ut et voluptates repudiandae.
