@@ -5,13 +5,10 @@ const Portfolio = () => {
   return (
     <section className="text-center my-5">
       <h2 className="h1-responsive font-weight-bold my-5">
-        Our Portfolio
+        Organic first page listing results, guaranteed.
       </h2>
       <p className="grey-text w-responsive mx-auto mb-5">
-        Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-        cupidatat non proident, sunt in culpa qui officia deserunt mollit
-        est laborum.
+        We don't do pay per click, it is all organic. No contracts, cancel anytime.
       </p>
 
       <MDBRow className="text-center">
