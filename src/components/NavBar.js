@@ -6,10 +6,10 @@ import { MDBNavbar,
   MDBNavLink, 
   MDBNavbarToggler, 
   MDBCollapse, 
-  MDBDropdown,
-  MDBDropdownToggle, 
-  MDBDropdownMenu, 
-  MDBDropdownItem, 
+  // MDBDropdown,
+  // MDBDropdownToggle, 
+  // MDBDropdownMenu, 
+  // MDBDropdownItem, 
   MDBIcon } from "mdbreact";
 // import { BrowserRouter as Router } from 'react-router-dom';
 
@@ -35,16 +35,16 @@ render() {
             <MDBNavItem>
               <MDBNavLink to="/">Home</MDBNavLink>
             </MDBNavItem>
-            <MDBNavItem>
+            {/* <MDBNavItem>
               <MDBNavLink to="#!">Web Services & Design</MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
               <MDBNavLink to="#!">SEO & Marketing</MDBNavLink>
-            </MDBNavItem>
+            </MDBNavItem> */}
             <MDBNavItem>
               <MDBNavLink to="/contact">Contact</MDBNavLink>
             </MDBNavItem>
-            <MDBNavItem>
+            {/* <MDBNavItem>
               <MDBDropdown>
                 <MDBDropdownToggle nav caret>
                   <div className="d-none d-md-inline">Small Business Services</div>
@@ -56,7 +56,7 @@ render() {
                   <MDBDropdownItem href="#!">Customer Service</MDBDropdownItem>
                 </MDBDropdownMenu>
               </MDBDropdown>
-            </MDBNavItem>
+            </MDBNavItem> */}
           </MDBNavbarNav>
           <MDBNavbarNav right>
             <MDBNavItem>

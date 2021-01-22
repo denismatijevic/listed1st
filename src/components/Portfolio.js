@@ -1,5 +1,11 @@
 import React from "react";
-import {  MDBRow, MDBCol, MDBCardBody, MDBIcon, MDBBtn, MDBView, MDBMask } from "mdbreact";
+import {  MDBRow, 
+  MDBCol, 
+  MDBCardBody, 
+  // MDBIcon, 
+  // MDBBtn, 
+  MDBView, 
+  MDBMask } from "mdbreact";
 
 const Portfolio = () => {
   return (
@@ -28,9 +34,9 @@ const Portfolio = () => {
             <p className="grey-text">
               Start to finish UI and UX design. Backend design and database architecture.
             </p>
-            <MDBBtn color="indigo" size="sm">
+            {/* <MDBBtn color="indigo" size="sm">
               <MDBIcon far icon="clone" className="left" /> MDBView project
-            </MDBBtn>
+            </MDBBtn> */}
           </MDBCardBody>
         </MDBCol>
         <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
@@ -49,9 +55,9 @@ const Portfolio = () => {
             <p className="grey-text">
               Hosting services and website maintenance to ensure that everything is always functioning perfectly.
             </p>
-            <MDBBtn color="indigo" size="sm">
+            {/* <MDBBtn color="indigo" size="sm">
               <MDBIcon far icon="clone" className="left" /> MDBView project
-            </MDBBtn>
+            </MDBBtn> */}
           </MDBCardBody>
         </MDBCol>
         <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
@@ -70,9 +76,9 @@ const Portfolio = () => {
             <p className="grey-text">
               Need help with accounting, taxes, HR, customer service? We got you.
             </p>
-            <MDBBtn color="indigo" size="sm">
+            {/* <MDBBtn color="indigo" size="sm">
               <MDBIcon far icon="clone" className="left" /> MDBView project
-            </MDBBtn>
+            </MDBBtn> */}
           </MDBCardBody>
         </MDBCol>
       </MDBRow>
