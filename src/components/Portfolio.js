@@ -8,7 +8,7 @@ const Portfolio = () => {
         Website & application design.
       </h2>
       <p className="grey-text w-responsive mx-auto mb-5">
-        We design websites and optimize them for SEO. We don't do pay per click, it is all organic. No contracts, cancel anytime.
+        We design websites and do everything else. 
       </p>
 
       <MDBRow className="text-center">
@@ -24,10 +24,9 @@ const Portfolio = () => {
             </a>
           </MDBView>
           <MDBCardBody className="pb-0">
-            <h4 className="font-weight-bold my-3">Summerlin Labs</h4>
+            <h4 className="font-weight-bold my-3">Website Design</h4>
             <p className="grey-text">
-              Temporibus autem quibusdam et aut officiis debitis aut rerum
-              necessitatibus saepe eveniet ut et voluptates repudiandae.
+              Start to finish UI and UX design. Backend design and database architecture.
             </p>
             <MDBBtn color="indigo" size="sm">
               <MDBIcon far icon="clone" className="left" /> MDBView project
@@ -46,10 +45,9 @@ const Portfolio = () => {
             </a>
           </MDBView>
           <MDBCardBody className="pb-0">
-            <h4 className="font-weight-bold my-3">Our Head Engineer</h4>
+            <h4 className="font-weight-bold my-3">Website Hosting & Maintenance</h4>
             <p className="grey-text">
-              Temporibus autem quibusdam et aut officiis debitis aut rerum
-              necessitatibus saepe eveniet ut et voluptates repudiandae.
+              Hosting services and website maintenance to ensure that everything is always functioning perfectly.
             </p>
             <MDBBtn color="indigo" size="sm">
               <MDBIcon far icon="clone" className="left" /> MDBView project
@@ -68,10 +66,9 @@ const Portfolio = () => {
             </a>
           </MDBView>
           <MDBCardBody className="pb-0">
-            <h4 className="font-weight-bold my-3">How To Fight Bigfoot</h4>
+            <h4 className="font-weight-bold my-3">Small Business Services</h4>
             <p className="grey-text">
-              Temporibus autem quibusdam et aut officiis debitis aut rerum
-              necessitatibus saepe eveniet ut et voluptates repudiandae.
+              Need help with accounting, taxes, HR, customer service? We got you.
             </p>
             <MDBBtn color="indigo" size="sm">
               <MDBIcon far icon="clone" className="left" /> MDBView project
