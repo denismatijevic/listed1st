@@ -4,7 +4,7 @@ import NavBar from "./components/NavBar";
 import Portfolio from "./components/Portfolio";
 import Footer from "./components/Footer";
 import Wrapper from "./components/Wrapper/index";
-import Contact from "./components/Contact";
+import ContactForm from "./pages/ContactForm";
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
       <NavBar />
       <Portfolio />
       <Wrapper>
-        <Route exact path="/contact" component={Contact} />
+        <Route exact path="/contact" component={ContactForm} />
       </Wrapper>
       <Footer />
     </div>

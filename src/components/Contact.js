@@ -44,7 +44,7 @@ return (
               success="right"
             />
             <MDBInput
-              label="Subject"
+              label="Your phone number"
               name="subject"
               icon="tag"
               group
@@ -56,7 +56,7 @@ return (
             <MDBInput
               type="textarea"
               rows="2"
-              label="Your message"
+              label="Let us know what you're looking for"
               name="message"
               icon="pencil-alt"
             />
