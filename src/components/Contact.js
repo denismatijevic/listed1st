@@ -1,43 +1,76 @@
 import React from "react";
-import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
+import emailjs from 'emailjs-com';
+import { MDBBtn, MDBIcon, MDBInput, MDBCard, MDBCardBody } from "mdbreact";
 
-const Contact = () => {
-  return (
-    <MDBFooter color="default-color" className="font-small pt-4 mt-4">
-      <MDBContainer fluid className="text-center text-md-left">
-        <MDBRow>
-          <MDBCol md="6">
-            <h5 className="title">Denis Matijevic</h5>
-            <p>
-              Reach out to us with any questions.
-            </p>
-          </MDBCol>
-          <MDBCol md="6">
-            <h5 className="title">Contact</h5>
-            <ul>
-              <li className="list-unstyled">
-                <p>Phone 801-809-9105</p>
-              </li>
-              <li className="list-unstyled">
-                <p>Email denisone90@gmail.com</p>
-              </li>
-              {/* <li className="list-unstyled">
-                <a href="#!">Link 3</a>
-              </li>
-              <li className="list-unstyled">
-                <a href="#!">Link 4</a>
-              </li> */}
-            </ul>
-          </MDBCol>
-        </MDBRow>
-      </MDBContainer>
-      <div className="footer-copyright text-center py-3">
-        <MDBContainer fluid>
-          &copy; {new Date().getFullYear()} Copyright: <a href="www.github.com/denismatijevic" target="_blank"> DenCo Industries </a>
-        </MDBContainer>
-      </div>
-    </MDBFooter>
-  );
+const ContactForm = () => {
+
+function sendEmail(e) {
+  e.preventDefault();
+
+  emailjs.sendForm('service_sa9by6b', 'template_1aql2q7', e.target, 'user_kg7FnuA649SwSPhBnhFdR')
+    .then((result) => {
+        console.log(result.text);
+    }, (error) => {
+        console.log(error.text);
+    });
+    e.target.reset()
 }
 
-export default Contact;
+return (
+  <MDBCard className="my-5 px-5 mx-auto bg"
+  style={{ fontWeight: 300, maxWidth: "80%" }}>
+        <MDBCardBody>
+         <form className="contact-form" onSubmit={sendEmail}>
+          <p className="h5 text-center mb-4">Contact us!</p>
+          <div className="grey-text">
+            <MDBInput
+              label="Your name"
+              name="name"
+              icon="user"
+              group
+              type="text"
+              validate
+              error="wrong"
+              success="right"
+            />
+            <MDBInput
+              label="Your email"
+              name="email"
+              icon="envelope"
+              group
+              type="email"
+              validate
+              error="wrong"
+              success="right"
+            />
+            <MDBInput
+              label="Subject"
+              name="subject"
+              icon="tag"
+              group
+              type="text"
+              validate
+              error="wrong"
+              success="right"
+            />
+            <MDBInput
+              type="textarea"
+              rows="2"
+              label="Your message"
+              name="message"
+              icon="pencil-alt"
+            />
+          </div>
+          <div className="text-center">
+            <MDBBtn outline color="info" type="submit">
+              Send
+              <MDBIcon far icon="paper-plane" className="ml-1" />
+            </MDBBtn>
+          </div>
+        </form>
+      </MDBCardBody>
+    </MDBCard>
+);
+}
+
+export default ContactForm;

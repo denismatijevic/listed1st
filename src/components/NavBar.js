@@ -1,9 +1,19 @@
 import React, { Component } from "react";
-import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBDropdown,
-MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem, MDBIcon } from "mdbreact";
-import { BrowserRouter as Router } from 'react-router-dom';
+import { MDBNavbar, 
+  MDBNavbarBrand, 
+  MDBNavbarNav, 
+  MDBNavItem, 
+  MDBNavLink, 
+  MDBNavbarToggler, 
+  MDBCollapse, 
+  MDBDropdown,
+  MDBDropdownToggle, 
+  MDBDropdownMenu, 
+  MDBDropdownItem, 
+  MDBIcon } from "mdbreact";
+// import { BrowserRouter as Router } from 'react-router-dom';
 
-class NavbarPage extends Component {
+class NavBar extends Component {
 state = {
   isOpen: false
 };
@@ -14,25 +24,25 @@ toggleCollapse = () => {
 
 render() {
   return (
-    <Router>
+   
       <MDBNavbar color="default-color" dark expand="md">
         <MDBNavbarBrand>
-          <strong className="white-text">listedFirst</strong>
+          <strong className="white-text">ListedFirst</strong>
         </MDBNavbarBrand>
         <MDBNavbarToggler onClick={this.toggleCollapse} />
         <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
           <MDBNavbarNav left>
             <MDBNavItem>
-              <MDBNavLink to="#!">Home</MDBNavLink>
-            </MDBNavItem>
-            <MDBNavItem>
-              <MDBNavLink to="#!">SEO & Marketing</MDBNavLink>
+              <MDBNavLink to="/">Home</MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
               <MDBNavLink to="#!">Web Services & Design</MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
-              <MDBNavLink to="#!">Contact Us</MDBNavLink>
+              <MDBNavLink to="#!">SEO & Marketing</MDBNavLink>
+            </MDBNavItem>
+            <MDBNavItem>
+              <MDBNavLink to="/contact">Contact</MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
               <MDBDropdown>
@@ -67,9 +77,9 @@ render() {
           </MDBNavbarNav>
         </MDBCollapse>
       </MDBNavbar>
-    </Router>
+   
     );
   }
 }
 
-export default NavbarPage;
+export default NavBar;
