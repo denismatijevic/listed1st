@@ -74,7 +74,7 @@ const Portfolio = () => {
           <MDBCardBody className="pb-0">
             <h4 className="font-weight-bold my-3">Small Business Services</h4>
             <p className="grey-text">
-              Need help with accounting, taxes, HR, customer service & sales? We got you.
+              We can help you with SEO, Online Ads, Social Media Ads & Social Media Management.
             </p>
             {/* <MDBBtn color="indigo" size="sm">
               <MDBIcon far icon="clone" className="left" /> MDBView project
